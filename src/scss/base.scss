@@ -1,0 +1,15 @@
+body {
+	background-color: $primary-color;
+	color: $primary-color;
+	font-family: $primary-font, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
