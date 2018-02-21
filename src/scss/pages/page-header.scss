@@ -2,7 +2,7 @@
 	color: #fff;
 	padding-top: 35px;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 
 	@media(max-width: 576px) {
 		padding-top: 0;
@@ -57,7 +57,8 @@
 
 .page-menu__logo {
 	display: block;
-	margin: 0 auto 8px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .page-menu__list {
@@ -70,7 +71,7 @@
 	font-size: 38px;
 	line-height: 1;
 	color: #e71e6e;
-	margin-bottom: 31px;
+	margin-bottom: 29px;
 	text-align: center;
 }
 

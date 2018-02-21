@@ -27,7 +27,14 @@
             <div class="col-12 col-sm-3 only-xs-first">
                 <div class="row">
                     <menu class="page-menu">
-                        <img src="assets/logo.png" width="70" height="70" alt="Logo" class="page-menu__logo">
+                        <div class="page-menu__logo">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+                                <g fill-rule="nonzero" fill="#FFF">
+                                    <path d="M35 0C15.7 0 0 15.7 0 35s15.7 35 35 35 35-15.7 35-35S54.298 0 35 0zm0 59.273c-13.385 0-24.273-10.888-24.273-24.273S21.615 10.727 35 10.727 59.272 21.617 59.272 35 48.383 59.273 35 59.273z"/>
+                                    <path d="M39.771 28.943l-3.486-10.76A1.367 1.367 0 0 0 35 17.24a1.344 1.344 0 0 0-1.284.926L30.23 28.947a1.396 1.396 0 0 1-1.286.98H17.687a1.299 1.299 0 0 0-.787 2.369l9.092 6.539c.474.34.673.949.493 1.504L23.008 50.98a1.348 1.348 0 0 0 2.076 1.504l9.123-6.621a1.35 1.35 0 0 1 1.587 0l9.122 6.64A1.35 1.35 0 0 0 46.994 51l-3.478-10.668a1.35 1.35 0 0 1 .495-1.515l9.09-6.551c.469-.321.67-.913.493-1.454a1.307 1.307 0 0 0-1.285-.884H41.055a1.399 1.399 0 0 1-1.284-.985z"/>
+                                </g>
+                            </svg>
+                        </div>
                         <p class="page-menu__logo-caption">spike</p>
                         <ul class="page-menu__list">
                             <li><a href="#0" class="nav-item page-menu__item">Все кино</a></li>
@@ -53,7 +60,8 @@
                 <div class="row">
                     <div class="page-article__image-wrap col-12 col-sm-4 col-md-3">
                         <div class="row">
-                            <img class="page-article__image m-auto" src="assets/poster.jpg" srcset="assets/poster@2x.jpg 2x" width="165" height="241"
+                            <img class="page-article__image m-auto" src="assets/poster.jpg"
+                                 srcset="assets/poster@2x.jpg 2x" width="165" height="241"
                                  alt="Deadpool poster">
                         </div>
                     </div>
@@ -104,7 +112,12 @@
                                 <img src="assets/trailer.jpg" srcset="assets/trailer@2x.jpg 2x" width="750" height="422"
                                      alt="Trailer" class="trailer__frame trailer__frame--pauser-overlay">
                                 <div class="trailer__controls">
-                                    <div class="trailer__icon trailer__icon--pause"></div>
+                                    <div class="trailer__icon trailer__icon--pause">
+                                        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M93.125 24.951C79.377 1.091 48.916-7.086 25.097 6.696 1.278 20.478-6.877 50.986 6.875 74.854 20.628 98.72 51.08 106.89 74.903 93.11c23.823-13.78 31.976-44.294 18.222-68.16zM69.918 84.466C50.868 95.49 26.5 88.949 15.5 69.858c-11-19.092-4.475-43.503 14.591-54.523 19.067-11.02 43.417-4.483 54.419 14.62 11.002 19.103 4.46 43.49-14.592 54.51zm-1.992-36.59l-26.07-15.239c-2.375-1.39-4.292-.278-4.28 2.476l.132 30.244c.014 2.754 1.946 3.873 4.337 2.495L67.92 52.883c2.378-1.376 2.382-3.618.006-5.008z"
+                                                  fill-rule="nonzero" fill="#FFF"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,8 +154,18 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-button swiper-button-prev"></div>
-                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev">
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.875 10.276l-.004.004a1.635 1.635 0 1 0-2.211 2.41l-.004.004 5.244 4.804-5.244 4.807.004.005a1.635 1.635 0 0 0 2.21 2.41l.004.004 6.563-6.014a1.642 1.642 0 0 0 0-2.42l-6.562-6.014zM17.5 0C7.835 0 0 7.835 0 17.5S7.835 35 17.5 35 35 27.165 35 17.5 27.165 0 17.5 0zm0 31.718c-7.84 0-14.218-6.378-14.218-14.218S9.66 3.282 17.5 3.282 31.718 9.66 31.718 17.5 25.34 31.718 17.5 31.718z"
+                                          fill-rule="nonzero" fill="#000"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.875 10.276l-.004.004a1.635 1.635 0 1 0-2.211 2.41l-.004.004 5.244 4.804-5.244 4.807.004.005a1.635 1.635 0 0 0 2.21 2.41l.004.004 6.563-6.014a1.642 1.642 0 0 0 0-2.42l-6.562-6.014zM17.5 0C7.835 0 0 7.835 0 17.5S7.835 35 17.5 35 35 27.165 35 17.5 27.165 0 17.5 0zm0 31.718c-7.84 0-14.218-6.378-14.218-14.218S9.66 3.282 17.5 3.282 31.718 9.66 31.718 17.5 25.34 31.718 17.5 31.718z"
+                                          fill-rule="nonzero" fill="#000"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +173,7 @@
         </div>
     </div>
     <div class="page-background">
-        <img src="assets/dead-bg.jpg" srcset="assets/dead-bg@2x.jpg 2x" alt="">
+        <img src="assets/dead-bg.jpg" alt="">
     </div>
 </main>
 

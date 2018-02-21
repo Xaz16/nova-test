@@ -1,10 +1,9 @@
-.swiper-wrapper {
-	//padding: 0 44px;
-}
-
 .swiper-button {
 	width: 60px;
 	height: 101%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	top: 0;
 	margin: 0;
 	background: {
@@ -12,6 +11,7 @@
 		position: center;
 		size: auto;
 		repeat: no-repeat;
+		image: none;
 	}
 
 	@media (max-width: 576px) {
@@ -20,12 +20,10 @@
 }
 
 .swiper-button-prev {
-	background-image: url('arrow.png');
-	left: -8px;
+	left: -7px;
+	transform: rotate(180deg);
 }
 
 .swiper-button-next {
-	background-image: url('arrow.png');
-	transform: rotate(180deg);
-	right: -8px;
+	right: -7px;
 }
