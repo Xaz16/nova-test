@@ -7,8 +7,30 @@ body {
 	line-height: 1.66666;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@media(max-width: 576px) {
+		font-size: 16px;
+	}
 }
 
 img {
 	max-width: 100%;
+}
+
+.only-xs-first {
+	@media(max-width: 576px) {
+		order: -1;
+	}
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.z1 {
+	z-index: 1;
 }

@@ -3,11 +3,22 @@
 	padding-top: 35px;
 	position: relative;
 	z-index: 1;
+
+	@media(max-width: 576px) {
+		padding-top: 0;
+	}
 }
 
 .page-header__heading {
 	margin-bottom: 3px;
 	padding-top: 21px;
+
+	@media(max-width: 576px) {
+		font-size: 93px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .page-header__info {
@@ -22,11 +33,26 @@
 	color: $accent-color;
 }
 
+.page-header__text-wrap {
+	width: 100%;
+	@media(max-width: 576px) {
+		text-align: center;
+		max-width: 325px;
+		margin: 0 auto 30px;
+		display: flex;
+	}
+}
+
 .page-menu {
 	margin: 0 0 0 auto;
 	padding: 15px 0 0 0;
 	width: 100%;
 	max-width: 165px;
+
+	@media (max-width: 576px) {
+		max-width: unset;
+		padding: 15px 15px 0;
+	}
 }
 
 .page-menu__logo {
@@ -67,5 +93,10 @@
 		background-color: darken($accent-color, 20%);
 	}
 
+	@media(max-width: 576px) {
+		line-height: 38px;
+		height: 35px;
+		margin-bottom: 14px;
+	}
 
 }

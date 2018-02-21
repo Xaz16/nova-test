@@ -14,15 +14,17 @@
 <header class="page-header">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-6">
+            <div class="col-12 col-sm-6">
                 <div class="row">
                     <h1 class="main-heading page-header__heading">Deadpool</h1>
-                    <p class="page-header__info">2016</p>
-                    <p class="page-header__info">Usa</p>
-                    <p class="page-header__info page-header__info--accent">18+</p>
+                    <div class="page-header__text-wrap">
+                        <p class="page-header__info">2016</p>
+                        <p class="page-header__info">Usa</p>
+                        <p class="page-header__info page-header__info--accent">18+</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-3 col-md-2">
+            <div class="col-12 col-sm-3 only-xs-first">
                 <div class="row">
                     <menu class="page-menu">
                         <img src="assets/logo.png" width="70" height="70" alt="Logo" class="page-menu__logo">
@@ -40,8 +42,8 @@
     </div>
 </header>
 
-<main>
-    <div class="container">
+<main class="pos-rel">
+    <div class="container pos-rel z1">
         <div class="row justify-content-center">
             <article class="page-article col-9">
                 <div class="page-article__backdrop-image-wrap">
@@ -49,13 +51,13 @@
                          srcset="assets/deadpool@2x.jpg 2x" alt="">
                 </div>
                 <div class="row">
-                    <div class="page-article__image-wrap col-3">
+                    <div class="page-article__image-wrap col-12 col-sm-4 col-md-3">
                         <div class="row">
-                            <img src="assets/poster.jpg" srcset="assets/poster@2x.jpg 2x" width="165" height="241"
+                            <img class="page-article__image m-auto" src="assets/poster.jpg" srcset="assets/poster@2x.jpg 2x" width="165" height="241"
                                  alt="Deadpool poster">
                         </div>
                     </div>
-                    <div class="page-article__text-wrap col-8 col-sm-9">
+                    <div class="page-article__text-wrap col-12 col-sm-8">
                         <p class="page-article__text">
                             Уэйд Уилсон — наёмник. Будучи побочным продуктом программы вооружённых сил под названием
                             «Оружие X», Уилсон приобрёл невероятную силу, проворство и способность к исцелению. Но
@@ -67,12 +69,12 @@
                     </div>
                     <div class="page-article__reviews col-12">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-sm-3">
                             <span class="page-article__reviews-label">
                                 Рецензии:
                             </span>
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 col-sm-8">
                                 <div class="row justify-content-between">
                                     <div class="page-article__reviews-item page-article__reviews-item--positive">
                                         <div class="page-article__reviews-item-text">
@@ -147,12 +149,15 @@
             </article>
         </div>
     </div>
+    <div class="page-background">
+        <img src="assets/dead-bg.jpg" srcset="assets/dead-bg@2x.jpg 2x" alt="">
+    </div>
 </main>
 
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="page-footer__wrap justify-content-end d-flex">
+            <div class="page-footer__wrap justify-content-sm-end d-flex">
                 <a href="#" class="page-footer__link">Реклама</a>
                 <a href="#" class="page-footer__link">Условия использования</a>
                 <span>© 2003–2016 Spike</span>

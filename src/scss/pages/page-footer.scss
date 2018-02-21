@@ -1,6 +1,8 @@
 .page-footer {
 	color: #fff;
 	font-size: 14px;
+	position: relative;
+	z-index: 1;
 }
 
 .page-footer__wrap {
@@ -8,16 +10,27 @@
 	width: 100%;
 	max-width: 750px;
 	margin: 0 auto;
+
+	@media(max-width: 576px) {
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
 }
 
 .page-footer__link {
 	color: #fff;
 	text-decoration: none;
-	margin-right: 13px;
+	margin-right: 18px;
 	transition: color 350ms ease;
 
 	&:hover {
 		color: $accent-color;
 		text-decoration: none;
+	}
+
+	@media(max-width: 576px) {
+		width: 100%;
+		margin: 0;
 	}
 }
