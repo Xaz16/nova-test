@@ -1,0 +1,23 @@
+.page-footer {
+	color: #fff;
+	font-size: 14px;
+}
+
+.page-footer__wrap {
+	padding: 18px 0;
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.page-footer__link {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 13px;
+	transition: color 350ms ease;
+
+	&:hover {
+		color: $accent-color;
+		text-decoration: none;
+	}
+}

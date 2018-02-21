@@ -3,7 +3,7 @@
 }
 
 .swiper-button {
-	width: 51px;
+	width: 60px;
 	height: 101%;
 	top: 0;
 	margin: 0;
@@ -17,11 +17,11 @@
 
 .swiper-button-prev {
 	background-image: url('arrow.png');
-	left: -1px;
+	left: -8px;
 }
 
 .swiper-button-next {
 	background-image: url('arrow.png');
 	transform: rotate(180deg);
-	right: -1px;
+	right: -8px;
 }

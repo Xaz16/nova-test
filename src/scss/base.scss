@@ -9,16 +9,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-}
-
-.mb-0 {
-	margin-bottom: 0;
-}
-
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
+img {
+	max-width: 100%;
 }

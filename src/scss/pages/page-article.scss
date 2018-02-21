@@ -6,17 +6,26 @@
 	position: relative;
 }
 
+.page-article__backdrop-image-wrap {
+	position: relative;
+	max-width: 750px;
+	height: 422px;
+	margin-top: -422px;
+	left: 0;
+}
+
 .page-article__backdrop-image {
 	position: absolute;
-	width: 750px;
-	height: 422px;
-	top: -422px;
-	left: 0;
+	bottom: 0;
 }
 
 .page-article__text-wrap {
 	padding-top: 17px;
 	padding-left: 7px;
+
+	@media(max-width: 767px) {
+		padding-left: 15px;
+	}
 }
 
 .page-article__text {
@@ -26,6 +35,10 @@
 
 .page-article__reviews {
 	padding: 39px 32px;
+
+	@media (max-width: 767px) {
+		padding: 39px 15px;
+	}
 }
 
 .page-article__reviews-label {

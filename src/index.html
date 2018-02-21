@@ -22,7 +22,7 @@
                     <p class="page-header__info page-header__info--accent">18+</p>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-sm-3 col-md-2">
                 <div class="row">
                     <menu class="page-menu">
                         <img src="assets/logo.png" width="70" height="70" alt="Logo" class="page-menu__logo">
@@ -44,8 +44,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <article class="page-article col-9">
-                <div class="page-article__backdrop-image">
-                    <img src="assets/deadpool.jpg" srcset="assets/deadpool@2x.jpg 2x" alt="">
+                <div class="page-article__backdrop-image-wrap">
+                    <img class="page-article__backdrop-image" src="assets/deadpool.jpg"
+                         srcset="assets/deadpool@2x.jpg 2x" alt="">
                 </div>
                 <div class="row">
                     <div class="page-article__image-wrap col-3">
@@ -54,7 +55,7 @@
                                  alt="Deadpool poster">
                         </div>
                     </div>
-                    <div class="page-article__text-wrap col-8">
+                    <div class="page-article__text-wrap col-8 col-sm-9">
                         <p class="page-article__text">
                             Уэйд Уилсон — наёмник. Будучи побочным продуктом программы вооружённых сил под названием
                             «Оружие X», Уилсон приобрёл невероятную силу, проворство и способность к исцелению. Но
@@ -147,6 +148,18 @@
         </div>
     </div>
 </main>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="page-footer__wrap justify-content-end d-flex">
+                <a href="#" class="page-footer__link">Реклама</a>
+                <a href="#" class="page-footer__link">Условия использования</a>
+                <span>© 2003–2016 Spike</span>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="assets/main.js"></script>
 </body>

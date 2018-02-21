@@ -1,6 +1,8 @@
 .page-header {
 	color: #fff;
 	padding-top: 35px;
+	position: relative;
+	z-index: 1;
 }
 
 .page-header__heading {
@@ -57,9 +59,13 @@
 	padding: 0 4px;
 	line-height: 28px;
 	height: 25px;
+	transition: background-color 350ms ease;
 
 	&:hover {
 		text-decoration: none;
 		color: #fff;
+		background-color: darken($accent-color, 20%);
 	}
+
+
 }
