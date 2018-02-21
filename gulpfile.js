@@ -17,6 +17,7 @@ var scripts = [
 
 var style = [
   './node_modules/bootstrap/scss/bootstrap-grid.scss',
+  './node_modules/bootstrap/scss/bootstrap-reboot.scss',
   './node_modules/swiper/dist/css/swiper.min.css',
   './src/scss/main.scss'
 ];
@@ -53,7 +54,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/scss/**/*.scss', ['style']);
+  gulp.watch(['./src/scss/*.scss', './src/scss/pages/*.scss', './src/scss/components/*.scss'], ['style']);
   gulp.watch(scripts, ['js']);
   gulp.watch('./src/assets/*', ['assets']);
   gulp.watch('./src/*.html', ['html']);

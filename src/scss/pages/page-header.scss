@@ -1,3 +1,65 @@
 .page-header {
 	color: #fff;
+	padding-top: 35px;
+}
+
+.page-header__heading {
+	margin-bottom: 3px;
+	padding-top: 21px;
+}
+
+.page-header__info {
+	width: 100%;
+	line-height: 1;
+	font-size: 40px;
+	font-family: $secondary-font;
+	margin-bottom: 8px;
+}
+
+.page-header__info--accent {
+	color: $accent-color;
+}
+
+.page-menu {
+	margin: 0 0 0 auto;
+	padding: 15px 0 0 0;
+	width: 100%;
+	max-width: 165px;
+}
+
+.page-menu__logo {
+	display: block;
+	margin: 0 auto 8px;
+}
+
+.page-menu__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.page-menu__logo-caption {
+	font-size: 38px;
+	line-height: 1;
+	color: #e71e6e;
+	margin-bottom: 31px;
+	text-align: center;
+}
+
+.page-menu__item {
+	display: block;
+	background-color: $accent-color;
+	text-decoration: none;
+	margin-bottom: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 4px;
+	line-height: 28px;
+	height: 25px;
+
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
 }
