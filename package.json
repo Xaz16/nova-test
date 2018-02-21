@@ -6,9 +6,10 @@
   "scripts": {
     "build:prod": "gulp",
     "build:dev": "gulp --dev",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "start": "gulp"
   },
-  "author": "",
+  "author": "Alkesy Chipiga",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
