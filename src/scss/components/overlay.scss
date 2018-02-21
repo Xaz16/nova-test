@@ -1,0 +1,28 @@
+.overlay {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		background-color: #563a3a;
+		opacity: 0.5;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.overlay--hover {
+	&:before {
+		opacity: 0;
+		transition: opacity 350ms ease;
+		will-change: opacity;
+		pointer-events: none;
+	}
+
+	&:hover {
+		&:before {
+			opacity: .5;
+		}
+	}
+}

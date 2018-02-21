@@ -11,14 +11,15 @@ var isProd = process.argv[2] !== '--dev';
 
 var scripts = [
   './node_modules/swiper/dist/js/swiper.min.js',
+  './node_modules/lightbox2/dist/js/lightbox-plus-jquery.js',
   './src/js/*.js'
-
 ];
 
 var style = [
   './node_modules/bootstrap/scss/bootstrap-grid.scss',
   './node_modules/bootstrap/scss/bootstrap-reboot.scss',
   './node_modules/swiper/dist/css/swiper.min.css',
+  './node_modules/lightbox2/dist/css/lightbox.min.css',
   './src/scss/main.scss'
 ];
 
@@ -60,4 +61,4 @@ gulp.task('watch', function () {
   gulp.watch('./src/*.html', ['html']);
 });
 
-gulp.task('default', gulpSequence('clean', ['style', 'assets', 'html']));
+gulp.task('default', gulpSequence('clean', ['style', 'assets', 'js', 'html']));

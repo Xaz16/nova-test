@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "lightbox2": "^2.10.0",
     "swiper": "^4.1.6"
   }
 }
