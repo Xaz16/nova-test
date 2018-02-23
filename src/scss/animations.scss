@@ -1,0 +1,5 @@
+@keyframes spinner {
+	0%  { transform: rotateY(0deg);    }
+	10% { transform: rotateY(-180deg); }
+	20% { transform: rotateY(0deg); }
+}

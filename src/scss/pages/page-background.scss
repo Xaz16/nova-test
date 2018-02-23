@@ -5,4 +5,8 @@
 	right: 0;
 	bottom: -59px;
 	height: 400px;
+
+	@media(max-width: 992px) {
+		display: none;
+	}
 }

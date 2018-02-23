@@ -12,6 +12,8 @@
 .page-header__heading {
 	margin-bottom: 3px;
 	padding-top: 21px;
+	position: relative;
+	left: -1000px;
 
 	@media(max-width: 576px) {
 		font-size: 93px;
@@ -23,6 +25,8 @@
 
 .page-header__info {
 	width: 100%;
+	position: relative;
+	left: -400px;
 	line-height: 1;
 	font-size: 40px;
 	font-family: $secondary-font;
@@ -59,6 +63,7 @@
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+	@include rotate3dAnimation(15s)
 }
 
 .page-menu__list {

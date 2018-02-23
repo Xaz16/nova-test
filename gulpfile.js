@@ -9,6 +9,7 @@ var gulpSequence = require('gulp-sequence');
 var clean = require('gulp-clean');
 var imagemin = require('gulp-imagemin');
 var isProd = process.argv[2] !== '--dev';
+var autoprefixer = require('gulp-autoprefixer');
 
 var scripts = [
   './node_modules/swiper/dist/js/swiper.min.js',
@@ -34,6 +35,10 @@ gulp.task('style', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulpif(isProd, cssnano()))
     .pipe(concat('main.css'))
+    .pipe(autoprefixer({
+      browsers: ['iOS 7', '< 2%'],
+      cascade: false
+    }))
     .pipe(gulp.dest('./public/assets/'));
 });
 
@@ -46,15 +51,15 @@ gulp.task('js', function () {
 
 gulp.task('assets', function () {
   return gulp.src('./src/assets/fonts/*')
-    .pipe(gulp.dest('./public/assets'));
+    .pipe(gulp.dest('./public/assets/fonts/'));
 });
 
 gulp.task('images', function () {
   return gulp.src('./src/assets/images/*')
-    .pipe(imagemin({
+    .pipe(gulpif(isProd, imagemin({
       verbose: true
-    }))
-    .pipe(gulp.dest('./public/assets/'));
+    })))
+    .pipe(gulp.dest('./public/assets/images/'));
 });
 
 gulp.task('html', function () {

@@ -1,0 +1,11 @@
+@mixin rotate3dAnimation($speed) {
+		animation-name: spinner;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-duration: $speed;
+		transform-style: preserve-3d;
+
+	&:hover {
+		animation-play-state: paused;
+	}
+}
