@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var delayInterval = setInterval(function () {
-    if(counter === 3) {
+    if (counter === 3) {
       clearInterval(delayInterval);
       return;
     }
@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 1000,
       timing: bounceEaseOut,
       draw: function (progress) {
-        if($headings[counter]) {
+        if ($headings[counter]) {
           $headings[counter].style.left = ((progress * 400) - 400) + 'px';
         }
-        if(progress === 1) {
+        if (progress === 1) {
           counter++;
         }
       }
@@ -67,7 +67,7 @@ function bounce(timeFraction) {
 }
 
 function convertToEaseOut(timing) {
-  return function(timeFraction) {
+  return function (timeFraction) {
     return 1 - timing(1 - timeFraction);
   }
 }
